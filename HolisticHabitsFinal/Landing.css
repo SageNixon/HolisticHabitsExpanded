@@ -1,0 +1,37 @@
+@charset "UTF-8";
+/* CSS Document */
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	margin: 0;
+	font-family: "playfair-display";
+	font-size: 17px;
+	color: #AA6708;
+	line-height: 1.6;
+}
+
+#showcase{
+	background-image: url(images/landing.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+
+#showcase .button{
+	font-size: 18px;
+	text-decoration: none;
+	color: #B47E31;
+	border: #AA6708 1px solid;
+	padding: 10px 20px;
+	border-radius: 10px;
+	margin-top: 25px;
+}
+
+#showcase .button:hover{
+	background: #AA6708;
+	color: #FFFFFF;
+}

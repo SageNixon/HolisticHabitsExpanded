@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>food page</title>
+<link href="food.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('images/GreenNav_01.jpg','images/GreenNav_02.jpg','images/GreenNav_03.jpg','images/GreenNav_04.jpg','images/GreenNav_05.jpg','images/GreenNav_06.jpg','images/GreenNav_07.jpg')">
+	<table width="1016" border="0" cellspacing="2">
+  <tbody>
+    <tr>
+      <td colspan="7" align="center"><img src="images/Food-Banner.jpg" alt="Food Banner" width="850" height="175" id="MealBanner"/></td>
+    </tr>
+    <tr>
+       <td width="133" align="center"><a href="Home.html"><img src="images/GreenNav1_01.jpg" alt="Home Button" width="133.2" height="100" id="HomeB" onMouseOver="MM_swapImage('HomeB','','images/GreenNav_01.jpg',1)" onMouseOut="MM_swapImgRestore()"/></a></td>
+      <td width="133" align="center"><a href="food.html"><img src="images/GreenNav1_02.jpg" alt="Food Button" width="133.2" height="100" id="FoodB" onMouseOver="MM_swapImage('FoodB','','images/GreenNav_02.jpg',1)" onMouseOut="MM_swapImgRestore()"/></a></td>
+      <td width="133" align="center"><a href="Smoothie.html"><img src="images/GreenNav1_03.jpg" alt="Smoothie Button" width="133.2" height="100" id="SmoothieB" onMouseOver="MM_swapImage('SmoothieB','','images/GreenNav_03.jpg',1)" onMouseOut="MM_swapImgRestore()"/></a></td>
+      <td width="133" align="center"><a href="Juice.html"><img src="images/GreenNav1_04.jpg" alt="Juice Button" width="133.2" height="100" id="JuiceB" onMouseOver="MM_swapImage('JuiceB','','images/GreenNav_04.jpg',1)" onMouseOut="MM_swapImgRestore()"/></a></td>
+      <td width="133" align="center"><a href="Order.html"><img src="images/GreenNav1_05.jpg" alt="Order Button" width="133.2" height="100" id="OrderB" onMouseOver="MM_swapImage('OrderB','','images/GreenNav_05.jpg',1)" onMouseOut="MM_swapImgRestore()"/></a></td>
+      <td width="133" align="center"><a href="Service.html"><img src="images/GreenNav1_06.jpg" alt="Services Button" width="133.2" height="100" id="ServiceB" onMouseOver="MM_swapImage('ServiceB','','images/GreenNav_06.jpg',1)" onMouseOut="MM_swapImgRestore()"/></a></td>
+      <td width="133" align="center"><a href="About.html"><img src="images/GreenNav1_07.jpg" alt="About Button" width="133.2" height="100" id="AboutB" onMouseOver="MM_swapImage('AboutB','','images/GreenNav_07.jpg',1)" onMouseOut="MM_swapImgRestore()"/></a></td>
+    </tr>
+    <tr>
+      <td colspan="7" align="center">
+		<!--Image slider starts-->
+		<div class="slider">
+		<div class="slides"/>
+			<!--radio buttons start-->
+			<input type="radio" name="radio-btn" id="radio1">
+			<input type="radio" name="radio-btn" id="radio2">
+			<input type="radio" name="radio-btn" id="radio3">
+			<input type="radio" name="radio-btn" id="radio4">
+			<input type="radio" name="radio-btn" id="radio5">
+			<!--radio buttons end>
+			<!--manual navigation start-->
+		<div class="navigation-manual">
+			 <label for="radio1" class="manual-btn"></label>
+			 <label for="radio2" class="manual-btn"></label>
+			 <label for="radio3" class="manual-btn"></label>
+			 <label for="radio4" class="manual-btn"></label>
+			 <label for="radio5" class="manual-btn"></label>
+	</div>
+			<!--image slider start-->
+			<div class="slide first">
+				<img src="images/waffles.jpg" width="230" height="230" alt="Waffles"/>
+			</div>
+			<div class="slide">
+				<img src="images/falafel.jpg" width="230" height="230" alt="Falafel"/> 
+			</div>
+			<div class="slide">
+				<img src="images/cauliwings.jpg" width="230" height="230" alt="Cauli Wings"/> 
+		 	</div>
+			<div class="slide">
+				<img src="images/BuddhaBowl.jpg" width="230" height="230" alt="BuddhaBowl"/>
+			</div>
+			<div class="slide">
+				<img src="images/soup.jpg" width="230" height="230" alt="Soup"/> 
+			</div>
+			<div class="slide">
+				<img src="images/wraps.jpg" width="230" height="230" alt="Lettuce Wrap"/>
+
+			<!--image slider end-->
+		
+			
+			</div>
+		</div>
+	</td></tr>
+    <tr>
+      <td colspan="4" align="right"><a href="index.html"><img src="images/mainbutton.jpg" width="100" height="100" alt="Landing Link"/></a></td>
+      <td colspan="3"><a href="https://www.instagram.com/ambersholistichabits/"><img src="images/Ig-link.jpg" width="100" height="100" alt="Instagram Link"/></a></td>
+    </tr>
+    <tr>
+      <td colspan="7" align="center"><a href="index.html">Logo</a> | <a href="Home.html">Home</a> | <a href="food.html">Food</a> | <a href="Smoothie.html">Smoothie</a> | <a href="Juice.html">Juice</a> | <a href="Order.html">Order</a> | <a href="Service.html">Service</a> | <a href="About.html">About</a></td>
+    </tr>
+    <tr>
+      <td colspan="7">&copy; All Rights Reserved - Ambers Holistic Habits x Sage Nixon</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

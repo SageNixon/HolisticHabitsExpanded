@@ -1,0 +1,286 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Order Page</title>
+<link href="p8_NixonSage.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+	body {
+    background-image: url(images/marblebgrnd.jpg);
+    background-repeat: repeat;
+}
+    </style>
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_validateForm() { //v4.0
+  if (document.getElementById){
+    var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
+    for (i=0; i<(args.length-2); i+=3) { test=args[i+2]; val=document.getElementById(args[i]);
+      if (val) { nm=val.name; if ((val=val.value)!="") {
+        if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');
+          if (p<1 || p==(val.length-1)) errors+='- '+nm+' must contain an e-mail address.\n';
+        } else if (test!='R') { num = parseFloat(val);
+          if (isNaN(val)) errors+='- '+nm+' must contain a number.\n';
+          if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
+            min=test.substring(8,p); max=test.substring(p+1);
+            if (num<min || max<num) errors+='- '+nm+' must contain a number between '+min+' and '+max+'.\n';
+      } } } else if (test.charAt(0) == 'R') errors += '- '+nm+' is required.\n'; }
+    } if (errors) alert('The following error(s) occurred:\n'+errors);
+    document.MM_returnValue = (errors == '');
+} }
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('file:///Macintosh HD/Users/sagenixon/Desktop/WD-FinalProject-Nixon/Nixon-Project 10/images/Home2Button.jpg','file:///Macintosh HD/Users/sagenixon/Desktop/WD-FinalProject-Nixon/Nixon-Project 10/images/Food2Button.jpg','file:///Macintosh HD/Users/sagenixon/Desktop/WD-FinalProject-Nixon/Nixon-Project 10/images/Juice2Button.jpg','file:///Macintosh HD/Users/sagenixon/Desktop/WD-FinalProject-Nixon/Nixon-Project 10/images/Order2Button.jpg','images/GreenNav_01.jpg','images/GreenNav_02.jpg','images/GreenNav_03.jpg','images/GreenNav_04.jpg','images/GreenNav_05.jpg','images/GreenNav_06.jpg','images/GreenNav_07.jpg')">
+<table width="1019" border="0" cellspacing="5" cellpadding="8">
+<tbody>
+  </tbody>
+<tbody>
+  <tr>
+    <td colspan="7" align="center"><img src="images/OrderBanner3.jpg" alt="Order Banner" width="850" height="175" id="OrderBanner"/>
+</td>
+  </tr>
+   <tr>
+      <td width="133" align="center"><a href="Home.html"><img src="images/GreenNav1_01.jpg" alt="Home Button" width="133.2" height="100" id="HomeB" onMouseOver="MM_swapImage('HomeB','','images/GreenNav_01.jpg',1)" onMouseOut="MM_swapImgRestore()"/></a>
+	</td>
+      <td width="133" align="center"><a href="food.html"><img src="images/GreenNav1_02.jpg" alt="Food Button" width="133.2" height="100" id="FoodB" onMouseOver="MM_swapImage('FoodB','','images/GreenNav_02.jpg',1)" onMouseOut="MM_swapImgRestore()"/></a>
+	</td>
+      <td width="133" align="center"><a href="Smoothie.html"><img src="images/GreenNav1_03.jpg" alt="Smoothie Button" width="133.2" height="100" id="SmoothieB" onMouseOver="MM_swapImage('SmoothieB','','images/GreenNav_03.jpg',1)" onMouseOut="MM_swapImgRestore()"/></a>
+	</td>
+      <td width="133" align="center"><a href="Juice.html"><img src="images/GreenNav1_04.jpg" alt="Juice Button" width="133.2" height="100" id="JuiceB" onMouseOver="MM_swapImage('JuiceB','','images/GreenNav_04.jpg',1)" onMouseOut="MM_swapImgRestore()"/></a>
+	</td>
+      <td width="133" align="center"><a href="Order.html"><img src="images/GreenNav1_05.jpg" alt="Order Button" width="133.2" height="100" id="OrderB" onMouseOver="MM_swapImage('OrderB','','images/GreenNav_05.jpg',1)" onMouseOut="MM_swapImgRestore()"/></a>
+	</td>
+      <td width="133" align="center"><a href="Service.html"><img src="images/GreenNav1_06.jpg" alt="Services Button" width="133.2" height="100" id="ServiceB" onMouseOver="MM_swapImage('ServiceB','','images/GreenNav_06.jpg',1)" onMouseOut="MM_swapImgRestore()"/></a></td>
+      <td width="133" align="center"><a href="About.html"><img src="images/GreenNav1_07.jpg" alt="About Button" width="133.2" height="100" id="AboutB" onMouseOver="MM_swapImage('AboutB','','images/GreenNav_07.jpg',1)" onMouseOut="MM_swapImgRestore()"/></a>
+	</td>
+    </tr>
+</tbody>
+<tbody>
+</tbody>
+</table>
+<form id="form1" name="form1" method="post">
+<table width="1019" border="0" cellspacing="2" cellpadding="0">
+  <tbody>
+    <tr>
+      <td>&nbsp;</td>
+      <td colspan="2">&nbsp;</td>
+      <td width="185" bgcolor="#D5E6D5">First Name</td>
+      <td width="271" bgcolor="#D5E6D5"><input name="First Name" type="text" id="First Name" size="30" maxlength="50"></td>
+      <td width="134">&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td colspan="2">&nbsp;</td>
+      <td bgcolor="#D5E6D5">Last Name</td>
+      <td bgcolor="#D5E6D5"><input name="Last Name" type="text" id="Last Name" size="30" maxlength="50"></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td colspan="2">&nbsp;</td>
+      <td bgcolor="#D5E6D5">Street Address</td>
+      <td bgcolor="#D5E6D5"><input name="Street Address" type="text" id="Street Address" size="30" maxlength="50"></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td colspan="2">&nbsp;</td>
+      <td bgcolor="#D5E6D5">City</td>
+      <td bgcolor="#D5E6D5"><input name="City" type="text" id="City" maxlength="50"></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td colspan="2">&nbsp;</td>
+      <td bgcolor="#D5E6D5">State </td>
+      <td bgcolor="#D5E6D5"><input name="State" type="text" id="State" value="Michigan" size="15" maxlength="50"></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td colspan="2">&nbsp;</td>
+      <td bgcolor="#D5E6D5">Zip</td>
+      <td bgcolor="#D5E6D5"><input name="Zipcode" type="text" id="Zipcode" onBlur="MM_validateForm('First Name','','R','Last Name','','R','Street Address','','R','City','','R','State','','R','Zipcode','','NisNum');return document.MM_returnValue" size="12" maxlength="50"></td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td colspan="3" bgcolor="#C4DCCD"><h4>Juice Choice (choose up to 3)</h4></td>
+      <td colspan="2" bgcolor="#C4DCCD"><h4>Mylk options </h4></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td rowspan="3">&nbsp;</td>
+      <td colspan="3" rowspan="3" bgcolor="#D5E6D5"><label>
+        <input type="checkbox" name="JuiceGroup" value="OPS Juice" id="JuiceGroup_0">
+        orange, pear, strawberry</label>
+        <br>
+        <label>
+          <input type="checkbox" name="JuiceGroup" value="KSW Juice" id="JuiceGroup_1">
+          kiwi, strawberry, watermelon</label>
+        <br>
+        <label>
+          <input type="checkbox" name="JuiceGroup" value="WL Juice" id="JuiceGroup_2">
+          watermelon lemon</label>
+        <br>
+        <label>
+          <input type="checkbox" name="JuiceGroup" value="SC Juice" id="JuiceGroup_3">
+          sweet citrus</label>
+        <br>
+        <label>
+          <input type="checkbox" name="JuiceGroup" value="G Juice" id="JuiceGroup_4">
+          grape</label>
+        <br>
+        <label>
+          <input type="checkbox" name="JuiceGroup" value="T Juice" id="JuiceGroup_5">
+          tropicala</label>
+        <br>
+        <label>
+          <input type="checkbox" name="JuiceGroup" value="OJ" id="JuiceGroup_6">
+          orange</label>
+        <br>
+        <label>
+          <input type="checkbox" name="JuiceGroup" value="pine apple" id="JuiceGroup_7">
+          pine/+apple</label>
+        <br>
+        <label>
+          <input type="checkbox" name="JuiceGroup" value="Cel Juice" id="JuiceGroup_8">
+          celery</label>
+        <br>
+        <label>
+          <input type="checkbox" name="JuiceGroup" value="Car Juice" id="JuiceGroup_9">
+          carrot</label>
+        <br>
+        <label>
+          <input type="checkbox" name="JuiceGroup" value="CC Juice" id="JuiceGroup_10">
+          celery, citrus</label>
+        <br>
+        <label>
+          <input type="checkbox" name="JuiceGroup" value="CaC Juice" id="JuiceGroup_11">
+      carrot, citrus</label></td>
+      <td colspan="2" bgcolor="#D5E6D5"><label>
+        <input type="checkbox" name="JuiceGroup_2" value="checkbox" id="JuiceGroup_15">
+        Cashew<br>
+        </label>
+        <label>
+          <input type="checkbox" name="JuiceGroup_3" value="checkbox" id="JuiceGroup_16">
+          Almond </label>
+        <label><br>
+          <input type="checkbox" name="JuiceGroup_4" value="checkbox" id="JuiceGroup_17">
+      Oat</label></td>
+      <td rowspan="3">&nbsp;</td>
+    </tr>
+    <tr>
+      <td colspan="2" bgcolor="#C4DCCD"><h4>Flavored Mylks</h4></td>
+    </tr>
+    <tr>
+      <td colspan="2" bgcolor="#D5E6D5"><label>
+        <input type="checkbox" name="JuiceGroup_" value="checkbox" id="JuiceGroup_12">
+        vanilla mylk</label>
+        <br>
+        <label>
+          <input type="checkbox" name="JuiceGroup_" value="checkbox" id="JuiceGroup_13">
+          chocolate mylk</label>
+        <br>
+        <label>
+          <input type="checkbox" name="JuiceGroup_" value="checkbox" id="JuiceGroup_14">
+      Strawberry Mylk</label></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td colspan="5" align="center" bgcolor="#C4DCCD"><h1>Drinks are bought in bulk!</h1></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td width="145">&nbsp;</td>
+      <td colspan="5" bgcolor="#D5E6D5"><p>Don't know what to get? Tell me a little bit about what you're trying to achieve! </p>
+        <p>
+          <textarea name="textarea" id="textarea" form="form1"></textarea>
+      </p></td>
+      <td width="136">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td colspan="3" bgcolor="#D5E6D5"><p>How you heard about
+        me        
+        :</p>
+        <p>
+          <select name="select" id="select">
+            <option value="Friend">Friend</option>
+            <option value="Internet">Social Media</option>
+            <option value="Internet">Search Engine</option>
+            <option value="Word">Word Of Mouth</option>
+            <option value="Other">Other</option>
+            </select>
+        </p></td>
+      <td colspan="2" align="center" bgcolor="#D5E6D5"><p><img src="images/PopUpButton.jpg" width="300" height="37.5" alt="Coupon Button"/></p>
+        <p>
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email">
+          <input type="submit">
+        </p></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td width="94" align="center" bgcolor="#C4DCCD"><a href="#top">Back to Top</a>&nbsp;</td>
+      <td width="38">&nbsp;</td>
+      <td>&nbsp;</td>
+      <td colspan="3" align="center">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td colspan="3" align="right">&nbsp;</td>
+      <td colspan="2" align="right"><input type="submit" name="submit" id="submit" value="Click to Submit">
+        <input type="reset" name="reset" id="reset" value="Click to Reset"></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td colspan="3" align="right"><a href="index.html?hl=en"><img src="images/mainbutton.jpg" width="100" height="100" alt="main button"/></a></td>
+      <td colspan="2" align="left"><a href="https://www.instagram.com/ambersholistichabits/"><img src="images/Ig-link.jpg" width="100" height="100" alt="Instagram"/></a></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td colspan="5" align="center" bgcolor="#D5E6D5"><a href="index.html">Logo</a> | <a href="Home.html">Home</a> | <a href="food.html">Food</a> | <a href="Smoothie.html">Smoothie</a> | <a href="Juice.html">Juice</a> | <a href="Order.html">Order</a> | <a href="Service.html">Service</a> | <a href="About.html">About</a></td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td colspan="5" align="center" bgcolor="#D5E6D5">&copy; All Rights Reserved - Ambers Holistic Habits x Sage Nixon</td>
+      <td>&nbsp;</td>
+    </tr>
+    </tbody>
+</table>
+</form>
+</body>
+</html>
